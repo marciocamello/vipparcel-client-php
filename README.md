@@ -35,7 +35,7 @@ $client->is_test(TRUE); // production or test request (default: production)
 $request = new VP_Request_Account_Balance_History();
 $request->set_params(array('limit' => 10, 'orderBy' => array('created' => 'ASC')));
 
-$client->request($request); // set client request object
+$client->request($request); // set request object
 
 $result = $client->execute(); // send request (return object VP_Response)
 print_r($result->has_errors()); // boolean
